@@ -7,7 +7,7 @@ describe('<Skeleton />', () => {
   it('render Skeleton with dumi', () => {
     const msg = 'dumi';
 
-    render(<Skeleton loading row={2} count={3}>content</Skeleton>);
+    render(<Skeleton loading row={2} count={3} height={120}>content</Skeleton>);
     expect(screen.queryByText(msg)).toBeInTheDocument();
   });
 });
