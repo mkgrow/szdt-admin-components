@@ -1,0 +1,60 @@
+.skeleton {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &.xs div {
+    width: calc(100% / 5 - 4 * 24px / 5);
+  }
+
+  &.sm div {
+    width: calc(100% / 4 - 3 * 24px / 4);
+  }
+
+  &.md div {
+    width: calc(100% / 3 - 2 * 24px / 3);
+  }
+
+  &.lg div {
+    width: calc(100% / 2 - 24px / 2);
+  }
+  &.xl div {
+    width: calc(100% - 24px);
+  }
+
+  div {
+    width: calc(100% / 4 - 3 * 24px / 4);
+  }
+
+  @keyframes skeleton-loading {
+    0% {
+      transform: translateX(-37.5%);
+    }
+    100% {
+      transform: translateX(37.5%);
+    }
+  }
+
+  .child {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: -150%;
+      bottom: 0;
+      left: -150%;
+      background: linear-gradient(
+        90deg,
+        rgba(190, 190, 190, 0.2) 25%,
+        rgba(129, 129, 129, 0.24) 37%,
+        rgba(190, 190, 190, 0.2) 63%
+      );
+      animation: skeleton-loading 1.4s ease infinite;
+      content: '';
+    }
+  }
+}
