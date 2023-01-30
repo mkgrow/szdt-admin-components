@@ -4,10 +4,9 @@ import { render, screen } from '@testing-library/react';
 import Skeleton from './index';
 
 describe('<Skeleton />', () => {
-  it('render Skeleton with dumi', () => {
-    const msg = 'dumi';
+  it('render Skeleton with loading', () => {
 
     render(<Skeleton loading row={2} count={3} height={120}>content</Skeleton>);
-    expect(screen.queryByText(msg)).toBeInTheDocument();
+    expect(screen.getAllByRole('child')).toHaveLength(6);
   });
 });

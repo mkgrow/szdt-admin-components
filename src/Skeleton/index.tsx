@@ -35,7 +35,7 @@ export default function Skeleton(props: Props) {
       >
         {list.map((i: number, idx: number) => {
           return (
-            <div key={`${i}-${idx}`} className={styles.child} style={{ ...childStyle, height }} />
+            <div key={`${i}-${idx}`} role='child' className={styles.child} style={{ ...childStyle, height }} />
           );
         })}
       </div>
