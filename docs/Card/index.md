@@ -17,3 +17,5 @@ export default () => (
   </Card>
 );
 ```
+
+<API src="../../src/Card/index.tsx" ></API>

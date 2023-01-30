@@ -17,3 +17,5 @@ export default () => (
   </Skeleton>
 );
 ```
+
+<API src="../../src/Skeleton/index.tsx" ></API>
