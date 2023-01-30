@@ -25,6 +25,15 @@ jobs:
       - run: npm test
       - run: npm run build
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branches: master
+          folder: dist
+
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
