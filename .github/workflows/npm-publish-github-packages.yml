@@ -29,9 +29,12 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
       - uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          branches: master
+          branches: component-page
           folder: dist
 
   publish-npm:

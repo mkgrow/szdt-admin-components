@@ -1,6 +1,7 @@
 {
   "name": "szdt-admin-components",
-  "version": "1.0.3",
+  "homepage": "https://mkgrow.github.io/szdt-admin-components",
+  "version": "1.0.4",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
