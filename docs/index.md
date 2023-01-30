@@ -1,2 +1,0 @@
-
-## Hello szdt-admin-components!
