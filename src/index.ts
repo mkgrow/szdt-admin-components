@@ -1,4 +1,2 @@
-import Card from './Card';
-import Skeleton from './Skeleton';
-
-export { Card, Skeleton };
+export { default as Card } from './Card';
+export { default as Skeleton } from './Skeleton';

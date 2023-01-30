@@ -119,6 +119,7 @@ export default function Skeleton(props) {
       list.map(function (i, idx) {
         return /*#__PURE__*/ React.createElement('div', {
           key: ''.concat(i, '-').concat(idx),
+          role: 'child',
           className: styles.child,
           style: _objectSpread(
             _objectSpread({}, childStyle),
