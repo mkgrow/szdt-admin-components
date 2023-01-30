@@ -6,10 +6,12 @@
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "build": "father build",
+    "updateversion": "npm --no-git-tag-version version patch -m \"版本更新至%s\"",
     "deploy": "npm run docs:build && npm run docs:deploy",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
+    "postversion": "git push"
   },
   "files": [
     "dist"
@@ -17,8 +19,7 @@
   "module": "dist/esm/index.js",
   "typings": "dist/esm/index.d.ts",
   "gitHooks": {
-    "pre-commit": "lint-staged",
-    "pre-push": "npm version patch -m \"版本更新至%s\""
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
