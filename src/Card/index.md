@@ -1,6 +1,10 @@
 ---
+nav:
+  path: /components
+  order: 0
 group:
   title: 基础
+  path: '/components'
 ---
 
 ## Card
