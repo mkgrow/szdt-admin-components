@@ -27,8 +27,19 @@ export default defineConfig({
     includes: ['docs', 'src'],
   },
   mfsu: {},
+  cssModulesTypescriptLoader: {},
   dynamicImport: {},
   exportStatic: {},
+  extraBabelPlugins: [
+    [
+      'babel-plugin-import',
+      {
+        libraryName: 'antd',
+        libraryDirectory: 'es',
+        style: true,
+      },
+    ],
+  ],
   history: {
     type: 'hash',
   },
