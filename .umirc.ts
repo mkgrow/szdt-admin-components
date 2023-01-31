@@ -13,8 +13,12 @@ export default defineConfig({
   navs: [
     null,
     {
-      title: 'Ant Design',
+      title: 'AntDesign',
       path: 'https://4x.ant.design/components/overview-cn/',
+    },
+    {
+      title: 'GitHub',
+      path: 'https://github.com/mkgrow/szdt-admin-components',
     },
   ],
   lessLoader: {

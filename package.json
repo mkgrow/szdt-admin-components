@@ -1,6 +1,6 @@
 {
   "name": "szdt-admin-components",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
