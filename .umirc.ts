@@ -27,7 +27,6 @@ export default defineConfig({
     includes: ['docs', 'src'],
   },
   mfsu: {},
-  cssModulesTypescriptLoader: {},
   dynamicImport: {},
   exportStatic: {},
   extraBabelPlugins: [
