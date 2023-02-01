@@ -1,6 +1,6 @@
 {
   "name": "szdt-admin-components",
-  "version": "1.0.35",
+  "version": "1.0.36",
   "homepage": "https://mkgrow.github.io/szdt-admin-components/",
   "scripts": {
     "start": "dumi dev",
@@ -14,7 +14,6 @@
     "test:coverage": "umi-test --coverage",
     "lint-staged": "lint-staged",
     "postversion": "git add package.json",
-    "release": "standard-version"
   },
   "files": [
     "dist"
@@ -23,7 +22,7 @@
   "module": "dist/esm/index.js",
   "typings": "dist/esm/index.d.ts",
   "gitHooks": {
-    "pre-commit": "lint-staged && npm run updateversion"
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
@@ -50,7 +49,6 @@
     "father": "^4.0.0-rc.2",
     "gh-pages": "^3.0.0",
     "lint-staged": "^10.0.7",
-    "prettier": "^2.2.1",
-    "standard-version": "^9.5.0"
+    "prettier": "^2.2.1"
   }
 }
