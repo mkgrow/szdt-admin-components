@@ -26,6 +26,7 @@ export default defineConfig({
   resolve: {
     includes: ['docs', 'src'],
   },
+  antd: true,
   mfsu: {},
   dynamicImport: {},
   exportStatic: {},
