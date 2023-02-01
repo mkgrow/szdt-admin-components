@@ -7,13 +7,12 @@
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "build": "father build",
-    "updateversion": "npm version patch -m \"版本更新至%s\"",
+    "updateversion": "npm version patch -m \"v%s\"",
     "deploy": "npm run docs:build && npm run docs:deploy",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
-    "lint-staged": "lint-staged",
-    "prepublish": "npm run updateversion"
+    "lint-staged": "lint-staged"
   },
   "files": [
     "dist"
