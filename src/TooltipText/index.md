@@ -6,7 +6,7 @@ group:
   title: 基础
 ---
 
-## TooltipText
+## TooltipText 组件
 
 Tooltip 超出指定宽度，鼠标悬浮显示弹窗
 

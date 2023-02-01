@@ -6,7 +6,7 @@ group:
   title: 基础
 ---
 
-## IconText
+## IconText 组件
 
 图标文本
 

@@ -6,7 +6,7 @@ group:
   title: 基础
 ---
 
-## Card
+## Card 组件
 
 卡片
 

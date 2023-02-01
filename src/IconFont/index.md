@@ -6,7 +6,7 @@ group:
   title: 基础
 ---
 
-## IconFont
+## IconFont 组件
 
 图标
 

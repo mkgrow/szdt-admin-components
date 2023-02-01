@@ -6,7 +6,7 @@ group:
   title: 基础
 ---
 
-## Skeleton
+## Skeleton 组件
 
 骨架屏
 
