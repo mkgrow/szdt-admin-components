@@ -11,7 +11,8 @@
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "release": "npm version patch --no-commit-hooks -m \"v%s\""
   },
   "files": [
     "dist"
