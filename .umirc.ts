@@ -26,7 +26,6 @@ export default defineConfig({
   resolve: {
     includes: ['docs', 'src'],
   },
-  cssModulesTypescriptLoader: {},
   mfsu: {},
   dynamicImport: {},
   exportStatic: {},
