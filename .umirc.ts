@@ -26,7 +26,7 @@ export default defineConfig({
   resolve: {
     includes: ['docs', 'src'],
   },
-  mfsu: {},
+  // mfsu: {},
   dynamicImport: {},
   exportStatic: {},
   extraBabelPlugins: [
