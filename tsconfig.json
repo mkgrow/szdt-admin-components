@@ -8,6 +8,18 @@
     "types": ["jest"],
     "strict": true,
     "skipLibCheck": true,
-    "declaration": true
+    "declaration": true,
+    "outDir": "build/dist",
+    "lib": ["esnext", "dom"],
+    "sourceMap": true,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "allowJs": true,
+    "experimentalDecorators": true
   }
 }
