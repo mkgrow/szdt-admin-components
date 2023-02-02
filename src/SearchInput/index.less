@@ -1,0 +1,29 @@
+.input {
+  :global {
+    border: 1px solid rgba(0, 0, 0, 0.36);
+    box-shadow: none;
+
+    .ant-input {
+      display: block;
+      width: 200px;
+      box-shadow: none;
+    }
+  }
+}
+
+.noInput {
+  border: 0;
+
+  &:global(.ant-input-affix-wrapper) {
+    background-color: transparent;
+  }
+
+  :global {
+    .ant-input {
+      width: 0;
+    }
+  }
+}
+.icon {
+  color: #9d9e9c;
+}
