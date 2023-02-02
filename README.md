@@ -33,8 +33,8 @@ const App = () => (
 clone locally:
 
 ```bash
-$ git clone git@github.com:ant-design/ant-design.git
-$ cd ant-design
+$ git clone git@github.com:mkgrow/szdt-admin-components.git
+$ cd szdt-admin-components
 $ npm install
 $ npm start
 ```
@@ -43,18 +43,17 @@ Open your browser and visit http://localhost:8000
 
 ## 🤖 Command introduction
 
-| Name                    | Description               | Remarks                                                                                                            |
-| ----------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| `npm install`           | Install dependencies      | -                                                                                                                  |
-| `npm start`             | Project begining          | Document usage [dumi](https://github.com/umijs/dumi), component development and documentation development together |
-| `npm test`              | Component test            | -                                                                                                                  |
-| `npm run test:coverage` | Code coverage review      | -                                                                                                                  |
-| `npm run prettier`      | Code prettier             | -                                                                                                                  |
-| `npm run build`         | Component packaging       | Use [father](https://github.com/umijs/father)                                                                      |                                                                                                      |
-| `npm run docs:build`    | Document packaging        | -                                                                                                                  |
-| `npm run docs:deploy`   | Document release          | The default is to use GitHub Pages                                                                                 |
-| `npm run deploy`        | Document package release  | -                                                                                                                  |
-
+| Name | Description | Remarks |
+| --- | --- | --- | --- |
+| `npm install` | Install dependencies | - |
+| `npm start` | Project begining | Document usage [dumi](https://github.com/umijs/dumi), component development and documentation development together |
+| `npm test` | Component test | - |
+| `npm run test:coverage` | Code coverage review | - |
+| `npm run prettier` | Code prettier | - |
+| `npm run build` | Component packaging | Use [father](https://github.com/umijs/father) |  |
+| `npm run docs:build` | Document packaging | - |
+| `npm run docs:deploy` | Document release | The default is to use GitHub Pages |
+| `npm run deploy` | Document package release | - |
 
 ## 🔗 Links
 
