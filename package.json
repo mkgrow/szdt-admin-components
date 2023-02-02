@@ -8,7 +8,7 @@
     "docs:deploy": "gh-pages -d docs-dist",
     "build": "father build",
     "deploy": "npm run docs:build && npm run docs:deploy",
-    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,json}\"",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
     "lint-staged": "lint-staged",
@@ -24,7 +24,7 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,less,md,json}": [
+    "*.{js,jsx,less,json}": [
       "prettier --write"
     ],
     "*.ts?(x)": [
