@@ -24,6 +24,7 @@ const SearchInput = ({ placeholder = '请输入关键字', onChange, ...rest }: 
 
   return (
     <Input
+      role="input"
       placeholder={placeholder}
       className={!isOnBlur ? 'noInput' : 'input'}
       onBlur={handleOnBlur}
