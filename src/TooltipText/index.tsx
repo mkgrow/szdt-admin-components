@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import { Tooltip } from 'antd';
 import cls from 'classnames';
 
-import styles from './index.less';
+import './index.less';
 
 const TooltipText: React.FC<{
   text: React.ReactNode;
@@ -33,11 +33,11 @@ const TooltipText: React.FC<{
       overlayStyle={overlayStyle || { maxWidth: 'max-content' }}
       title={defaultTitle || title}
     >
-      <div className={styles.placeText} ref={ref}>
+      <div className="place-text" ref={ref}>
         {text}
       </div>
       <div
-        className={cls(styles.text, textClassName)}
+        className={cls('text', textClassName)}
         onMouseEnter={() => setVisible(true)}
         onMouseLeave={() => setVisible(false)}
       >
