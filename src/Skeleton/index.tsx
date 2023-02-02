@@ -1,7 +1,7 @@
 import React from 'react';
 import cls from 'classnames';
 
-import styles from './index.less';
+import './index.less';
 
 interface Props {
   count?: number;
@@ -34,12 +34,12 @@ export default function Skeleton(props: Props) {
     return (
       <div
         style={{ gap: `${space || 24}px` }}
-        className={cls(styles.skeleton, className, {
-          [styles.xl]: count === 1,
-          [styles.lg]: count === 2,
-          [styles.md]: count === 3,
-          [styles.sm]: count === 4,
-          [styles.xs]: count === 5,
+        className={cls('skeleton', className, {
+          xl: count === 1,
+          lg: count === 2,
+          md: count === 3,
+          sm: count === 4,
+          xs: count === 5,
         })}
       >
         {list.map((i: number, idx: number) => {
@@ -47,7 +47,7 @@ export default function Skeleton(props: Props) {
             <div
               key={`${i}-${idx}`}
               role="child"
-              className={styles.child}
+              className="child"
               style={{ ...childStyle, height }}
             />
           );
