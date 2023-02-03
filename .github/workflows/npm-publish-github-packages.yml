@@ -11,7 +11,7 @@ on:
       - master
   push:
     tags:
-      - '*'
+      - '**'
 
 jobs:
   build:
