@@ -6,3 +6,4 @@ export { default as TooltipText } from './TooltipText';
 export { default as Empty } from './Empty';
 export { default as SearchInput } from './SearchInput';
 export { default as Subtitle } from './Subtitle';
+export { default as ExportBtn } from './ExportBtn';
