@@ -3,7 +3,7 @@ nav:
   title: 组件
   path: /components
 group:
-  title: 基础
+  title: 其他
 ---
 
 ## ExportBtn 组件
@@ -19,4 +19,4 @@ export default () => (
 );
 ```
 
-<API src="../../src/ExportBtn/index.tsx" ></API>
+<API src="../../components/ExportBtn/index.tsx" ></API>

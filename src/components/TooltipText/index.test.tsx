@@ -8,7 +8,7 @@ describe('<TooltipText />', () => {
     render(
       <div style={{ width: '40px' }}>
         <TooltipText rowNumber={1} text="测试文本" />
-      </div>
+      </div>,
     );
     expect(screen.getAllByText('测试文本')).toHaveLength(2);
   });

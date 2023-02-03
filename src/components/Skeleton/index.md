@@ -3,12 +3,12 @@ nav:
   title: 组件
   path: /components
 group:
-  title: 基础
+  title: 其他
 ---
 
 ## Skeleton 组件
 
-骨架屏
+卡片式骨架屏
 
 ```tsx
 import React from 'react';
@@ -21,4 +21,4 @@ export default () => (
 );
 ```
 
-<API src="../../src/Skeleton/index.tsx" ></API>
+<API src="../../components/Skeleton/index.tsx" ></API>

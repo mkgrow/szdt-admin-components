@@ -18,4 +18,4 @@ import { IconText } from 'szdt-admin-components';
 export default () => <IconText icon={TeamOutlined} text="测试" />;
 ```
 
-<API src="../../src/IconText/index.tsx" ></API>
+<API src="../../components/IconText/index.tsx" ></API>

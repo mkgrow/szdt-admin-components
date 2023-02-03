@@ -18,4 +18,4 @@ export default () => (
 );
 ```
 
-<API src="../../src/Subtitle/index.tsx" ></API>
+<API src="../../components/Subtitle/index.tsx" ></API>

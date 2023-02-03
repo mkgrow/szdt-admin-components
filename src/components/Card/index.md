@@ -3,6 +3,7 @@ nav:
   title: 组件
   path: /components
 group:
+  order: 1
   title: 基础
 ---
 
@@ -21,4 +22,4 @@ export default () => (
 );
 ```
 
-<API src="../../src/Card/index.tsx" ></API>
+<API src="../../components/Card/index.tsx" ></API>

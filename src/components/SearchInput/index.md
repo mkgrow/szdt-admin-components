@@ -3,11 +3,13 @@ nav:
   title: 组件
   path: /components
 group:
-  title: 基础
+  order: 3
+  title: 输入
 ---
 
 ## SearchInput 组件
 
+带搜索图标的输入框
 
 ```tsx
 import React from 'react';
@@ -18,4 +20,4 @@ export default () => (
 );
 ```
 
-<API src="../../src/SearchInput/index.tsx" ></API>
+<API src="../../components/SearchInput/index.tsx" ></API>

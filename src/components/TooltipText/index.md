@@ -21,4 +21,4 @@ export default () => (
 );
 ```
 
-<API src="../../src/TooltipText/index.tsx" ></API>
+<API src="../../components/TooltipText/index.tsx" ></API>
