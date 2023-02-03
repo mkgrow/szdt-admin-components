@@ -19,7 +19,7 @@ export default () => {
   const [value, setValue] = useState(null);
   
   return (
-    <Space direction='vertical'>
+    <Space direction='vertical' style={{width: '100%'}}>
       <Cron value={value} onChange={setValue} />
       <div>{value}</div>
     </Space>

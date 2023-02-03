@@ -90,7 +90,7 @@ export default function CustomCron({ value, disabled, onChange }: any) {
             value={value}
             disabled={disabled}
             onChange={(val) => handleChange({ [key]: val })}
-            style={{ width: 200 }}
+            style={{ minWidth: 200 }}
           >
             {data.map((item) => (
               <Option key={item.key} value={item.key}>
