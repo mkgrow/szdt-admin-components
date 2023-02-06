@@ -8,3 +8,5 @@ export { default as SearchInput } from './components/SearchInput';
 export { default as Subtitle } from './components/Subtitle';
 export { default as ExportBtn } from './components/ExportBtn';
 export { default as Cron } from './components/Cron';
+export { default as FormLayout } from './components/FormLayout';
+export { default as FormFooterAction } from './components/FormFooterAction';
