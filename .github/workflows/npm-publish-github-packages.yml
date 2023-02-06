@@ -10,8 +10,10 @@ on:
     branches:
       - master
   push:
+    branches:
+      - master
     tags:
-      - v1.*
+      - v*
 
 jobs:
   build:
