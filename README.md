@@ -1,3 +1,7 @@
+## ✨ Online preview
+
+https://mkgrow.github.io/szdt-admin-components/#/
+
 ## 📦 Install
 
 ```bash
