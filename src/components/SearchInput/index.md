@@ -16,7 +16,7 @@ import React from 'react';
 import { SearchInput } from 'szdt-admin-components';
 
 export default () => (
-  <SearchInput placeholder="请输入" onChange={(v: string) => console.log(v)} />
+  <SearchInput bordered={true} style={{width: '160px'}} placeholder="请输入" onChange={(v: string) => console.log(v)} />
 );
 ```
 

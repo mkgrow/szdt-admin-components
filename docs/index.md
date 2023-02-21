@@ -12,7 +12,7 @@ footer: Copyright szdt © 2023
 
 ## ✨ Online preview
 
-https://mkgrow.github.io/szdt-admin-components/#/components
+https://mkgrow.github.io/szdt-admin-components/#/
 
 ## 📦 Install
 

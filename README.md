@@ -16,7 +16,7 @@ yarn add szdt-admin-components
 
 ```jsx
 import React from 'react';
-import { Card, DatePicker } from 'szdt-admin-components';
+import { IconFont, IconText, Skeleton, TooltipText } from 'szdt-admin-components';
 
 const App = () => (
   <>

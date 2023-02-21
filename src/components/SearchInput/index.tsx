@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { Input } from 'antd';
 import './index.less';
 import IconFont from '../IconFont';
+import type { InputProps } from 'antd/es/input';
 
-const SearchInput = ({ placeholder = '请输入关键字', onChange, ...rest }: any) => {
+const SearchInput = ({ placeholder = '请输入关键字', onChange, ...rest }: InputProps) => {
   const [isOnBlur, setIsOnBlur] = useState<boolean>(false);
 
   const handleOnBlur = () => {
