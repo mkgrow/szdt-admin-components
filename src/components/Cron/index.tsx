@@ -24,15 +24,26 @@ interface Props {
    * */
   value?: string;
   /**
+   * @description 默认周期类型
+   * @default everyDay
+   * */
+  defaultType?: 'everyDay' | 'everyWeek' | 'everyMonth' | 'customize';
+  /**
    * @description 改变后回调
    * */
-  onChange?: (v?: string) => void;
+  onChange?: (cron?: string) => void;
 }
-const Cron: React.FC<Props> = ({ value, onChange }) => {
+const Cron: React.FC<Props> = ({ defaultType, value, onChange }) => {
   const [defaultTimeType, setDefaultTimeType] = useState(timeTypes[0].key);
   const [selectedValue, setSelectedValue] = useState<[]>([]);
   const [selectTime, setSelectTime] = useState<moment.Moment | null | undefined>(null);
   const [expression, setExpression] = useState<string | null>(defaultCron);
+
+  useEffect(() => {
+    if (defaultType) {
+      setDefaultTimeType(defaultType);
+    }
+  }, [defaultType]);
 
   /* eslint-disable */
   useEffect(() => {

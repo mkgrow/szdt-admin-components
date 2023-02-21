@@ -20,7 +20,7 @@ export default () => {
   
   return (
     <Space direction='vertical' style={{width: '100%'}}>
-      <Cron value={value} onChange={setValue} />
+      <Cron defaultType='customize' value={value} onChange={setValue} />
       <div>{value}</div>
     </Space>
   )
