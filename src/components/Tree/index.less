@@ -1,0 +1,37 @@
+@import '../../assets/styles/variable';
+
+.tree {
+  padding: @padding-md @padding-lg;
+  background-color: white;
+}
+
+.children {
+  margin-left: @margin-md;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  .child {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.icon {
+  width: @icon-size-md;
+
+  img {
+    width: 100%;
+  }
+}
+
+.text {
+  margin-left: @margin-xss + 2;
+  padding: @padding-xss + 2 0;
+  color: #333;
+}
+
+.selected {
+  color: @primary-color;
+}

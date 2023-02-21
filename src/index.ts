@@ -10,3 +10,4 @@ export { default as ExportBtn } from './components/ExportBtn';
 export { default as Cron } from './components/Cron';
 export { default as FormLayout } from './components/FormLayout';
 export { default as FormFooterAction } from './components/FormFooterAction';
+export { default as Tree } from './components/Tree';
