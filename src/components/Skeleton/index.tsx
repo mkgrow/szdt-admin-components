@@ -4,13 +4,42 @@ import cls from 'classnames';
 import './index.less';
 
 interface Props {
+  /**
+   * @description 一行显示的数量
+   * @default 4
+   * */
   count?: number;
+  /**
+   * @description 行数
+   * @default 1
+   * */
   row?: number;
+  /**
+   * @description 卡片高度
+   * @default 100
+   * */
   height?: any;
+  /**
+   * @description 卡片之间的间隔
+   * @default 24px
+   * */
   space?: number;
+  /**
+   * @description 控制是否显示骨架屏
+   * @default false
+   * */
   loading?: boolean;
+  /**
+   * @description 卡片样式
+   * */
   childStyle?: React.CSSProperties;
+  /**
+   * @description 骨架屏样式
+   * */
   className?: React.CSSProperties;
+  /**
+   * @description 加载万之后显示的内容
+   * */
   children: React.ReactNode;
 }
 

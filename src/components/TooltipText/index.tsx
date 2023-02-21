@@ -5,12 +5,30 @@ import cls from 'classnames';
 import './index.less';
 
 const TooltipText: React.FC<{
+  /**
+   * @description 文本内容
+   * */
   text: React.ReactNode;
+  /**
+   * @description 弹窗内容
+   * */
   title?: React.ReactNode;
+  /**
+   * @description 弹窗样式
+   * */
   overlayStyle?: React.CSSProperties;
+  /**
+   * @description 文本样式
+   * */
   textClassName?: React.CSSProperties;
+  /**
+   * @description 弹窗显示的行数
+   * */
   rowNumber?: number;
-  betweenSpace?: number; // 父节点两侧内边距
+  /**
+   * @description 父节点两侧内边距
+   * */
+  betweenSpace?: number;
 }> = ({
   text,
   title: defaultTitle,

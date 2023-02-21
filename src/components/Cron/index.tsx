@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useState } from 'react';
 import { Select, TimePicker, ConfigProvider } from 'antd';
 import { dayOfTheMonthOption, dayOfTheWeekData } from './utils';
 import CustomCron from './CustomCron';
-import moment from 'moment'
+import moment from 'moment';
 import zh_CN from 'antd/lib/locale-provider/zh_CN';
 
 import './index.less';
@@ -18,10 +18,17 @@ const timeTypes = [
   { key: 'customize', label: '周期' },
 ];
 
-const Cron: React.FC<{
+interface Props {
+  /**
+   * @description 默认显示的cron
+   * */
   value?: string;
+  /**
+   * @description 改变后回调
+   * */
   onChange?: (v?: string) => void;
-}> = ({ value, onChange }) => {
+}
+const Cron: React.FC<Props> = ({ value, onChange }) => {
   const [defaultTimeType, setDefaultTimeType] = useState(timeTypes[0].key);
   const [selectedValue, setSelectedValue] = useState<[]>([]);
   const [selectTime, setSelectTime] = useState<moment.Moment | null | undefined>(null);
@@ -187,7 +194,7 @@ const Cron: React.FC<{
   return (
     <div className={defaultTimeType !== 'customize' ? 'cron' : ''}>
       <Select
-        role='cron-type'
+        role="cron-type"
         style={{ marginRight: '16px', width: 'auto' }}
         placeholder="请选择类型"
         onChange={(val) => handleTimeTypeChange(val)}

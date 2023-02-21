@@ -8,14 +8,14 @@ group:
 
 ## TooltipText 组件
 
-Tooltip 超出指定宽度，鼠标悬浮显示弹窗
+Tooltip 超出父元素宽度，鼠标悬浮显示弹窗
 
 ```tsx
 import React from 'react';
 import { TooltipText } from 'szdt-admin-components';
 
 export default () => (
-  <div style={{ width: '40px' }}>
+  <div style={{ width: '50px' }}>
     <TooltipText rowNumber={1} text="测试文本" />
   </div>
 );

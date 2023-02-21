@@ -6,13 +6,42 @@ import './index.less';
 const { Item } = Form;
 
 interface Props {
+  /**
+   * @description 确认按钮是否可点
+   * @default false
+   * */
   disabled?: boolean;
+  /**
+   * @description 取消按钮文本
+   * @default 取消
+   * */
   onCancelText?: string;
+  /**
+   * @description 确认按钮文本
+   * @default 确认
+   * */
   onOkText?: string;
+  /**
+   * @description 取消按钮点击回调
+   * */
   onCancel?: (v?: any) => void;
+  /**
+   * @description 确认按钮点击回调
+   * */
   onOk?: (v?: any) => void;
+  /**
+   * @description 是否加载
+   * @default false
+   * */
   loading?: boolean;
+  /**
+   * @description 扩展按钮
+   * @default null
+   * */
   extraBtn?: React.ReactNode;
+  /**
+   * @description 其他参数
+   * */
   [k: string]: any;
 }
 function FormFooterAction({

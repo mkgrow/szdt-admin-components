@@ -9,10 +9,25 @@ const Icon = createFromIconfontCN({
 });
 
 interface Props {
-  className?: any;
-  type?: any;
-  style?: any;
+  /**
+   * @description 图标样式
+   * */
+  className?: React.CSSProperties;
+  /**
+   * @description IconFont中上传的图标名称
+   * */
+  type?: string;
+  /**
+   * @description 图标样式
+   * */
+  style?: object;
+  /**
+   * @description 图标大小
+   * */
   size?: string;
+  /**
+   * @description 点击回调
+   * */
   onClick?: () => void;
 }
 
