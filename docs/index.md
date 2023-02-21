@@ -2,8 +2,8 @@
 title: szdt-admin-components
 order: 1
 hero:
-  title: '思辙数据'
-  desc: '管理系统组件库'
+  title: '数据管理系统组件库'
+  desc: '项目中常用的一些组件封装'
   actions:
     - text: 开始使用
       link: /components
